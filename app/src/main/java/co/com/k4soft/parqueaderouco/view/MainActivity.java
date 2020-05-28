@@ -1,0 +1,54 @@
+package co.com.k4soft.parqueaderouco.view;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import co.com.k4soft.parqueaderouco.R;
+import co.com.k4soft.parqueaderouco.utilities.ActionBarUtil;
+import co.com.k4soft.parqueaderouco.view.movimiento.MovimientoActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private ActionBarUtil actionBarUtil;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initComponents();
+    }
+
+    /**Titulo del activity
+     * y funcion flecha*/
+    private void initComponents() {
+        actionBarUtil = new ActionBarUtil(this);
+        actionBarUtil.setToolBar(getString(R.string.menu_principal));
+    }
+
+
+    public void goToTarifaActivity(View view) {
+       Intent intent = new Intent(this,TarifaActivity.class);
+       startActivity(intent);
+    }
+
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    public void goToIngresoSalida(View view) {
+        Intent intent = new Intent(this, MovimientoActivity.class);
+        startActivity(intent);
+    }
+
+    /**Realizar el enlace para ir a los movimientos
+     * de salida de los vehiculos*/
+
+
+}

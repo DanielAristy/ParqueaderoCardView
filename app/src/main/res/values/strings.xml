@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Parqueadero</string>
+    <string name="bienvenido">Bienvenido (a) escoja una opción</string>
+    <string name="configurar_tarifa">Configurarción de tarifas</string>
+    <string name="listado_tarifas">Listado de tarifas</string>
+    <string name="menu_principal">Menu principal</string>
+    <string name="registro_tarifa">Registrar tarifa</string>
+    <string name="registrar">Registrar</string>
+    <string name="digite_nombre_tarifa">Digite nombre tarifa</string>
+    <string name="digite_valor_tarifa">Digite un valor de tarifa</string>
+    <string name="requerido">Requerido</string>
+    <string name="succesfully">La informacion se ha guardado satisfactoriamente</string>
+    <string name="tarifas">Listado de Tarifas</string>
+    <string name="sin_tarifas">No existen tarifas configuradas en el sistema</string>
+    <string name="registrar_ingreso">Registrar ingreso</string>
+    <string name="registrar_salida">Registrar salida</string>
+    <string name="total_pagar">Total a pagar:</string>
+    <string name="cantidad_horas">Cantidad horas:</string>
+    <string name="registrar_ingreso_salida">Registrar ingresos y salidas</string>
+    <string name="digite_placa">Digite una placa</string>
+    <string name="buscar">Buscar</string>
+</resources>
