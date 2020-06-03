@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 /**Desde que me actualizo Android no me deja
  * no me generan los getters and setters*/
-//@Data
+@Data
 @Entity(tableName = Tabla.TARIFA)
 @NoArgsConstructor
 public class Tarifa {
@@ -26,34 +26,5 @@ public class Tarifa {
     @ColumnInfo(name = "precio")
     private double precio;
 
-    public Tarifa(@NonNull Integer idTarifa, String nombre, double precio) {
-        this.idTarifa = idTarifa;
-        this.nombre = nombre;
-        this.precio = precio;
-    }
 
-    @NonNull
-    public Integer getIdTarifa() {
-        return idTarifa;
-    }
-
-    public void setIdTarifa(@NonNull Integer idTarifa) {
-        this.idTarifa = idTarifa;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
 }
