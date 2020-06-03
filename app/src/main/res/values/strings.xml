@@ -19,4 +19,11 @@
     <string name="registrar_ingreso_salida">Registrar ingresos y salidas</string>
     <string name="digite_placa">Digite una placa</string>
     <string name="buscar">Buscar</string>
+    <string name="actualizar_nombre">"Actualizar nombre "</string>
+    <string name="actualizar_precio">Actualizar precio</string>
+    <string name="actualizar">"Actulizar "</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="se_elimino">Se elimino correctamente</string>
+    <string name="update">La informacion se actualizó correctamente</string>
+    <string name="delete">La informacion se eliminó exitosamente</string>
 </resources>

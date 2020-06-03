@@ -43,13 +43,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
                 android:text="TextView"
                 android:textColor="#000"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@+id/btnDelete"
                 app:layout_constraintStart_toEndOf="@+id/idTarifa"
                 app:layout_constraintTop_toTopOf="@+id/idTarifa"
                 app:layout_constraintVertical_bias="0.0" />
@@ -64,8 +64,10 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/txtNombreTarifa"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/idTarifa"
-                app:layout_constraintTop_toBottomOf="@+id/txtNombreTarifa" />
+                app:layout_constraintTop_toBottomOf="@+id/idTarifa"
+                app:layout_constraintVertical_bias="0.428" />
 
             <TextView
                 android:id="@+id/idTarifa"
@@ -81,6 +83,36 @@
                 app:layout_constraintStart_toEndOf="@+id/imagen"
                 app:layout_constraintTop_toTopOf="@+id/imagen"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtNombreTarifa"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnDelete"
+                app:layout_constraintTop_toBottomOf="@+id/btnDelete"
+                app:layout_constraintVertical_bias="0.125"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

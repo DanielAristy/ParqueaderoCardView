@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.List;
 
 import butterknife.BindView;
@@ -19,7 +22,7 @@ import co.com.k4soft.parqueaderouco.entidades.Tarifa;
 import co.com.k4soft.parqueaderouco.persistencia.room.DataBaseHelper;
 import co.com.k4soft.parqueaderouco.utilities.ActionBarUtil;
 
-public class TarifaActivity extends AppCompatActivity {
+public class TarifaActivity extends AppCompatActivity{
 
     /**Flecha con titulo*/
     private ActionBarUtil actionBarUtil;
@@ -28,6 +31,7 @@ public class TarifaActivity extends AppCompatActivity {
     public List<Tarifa> listaTarifas;
     private TarifaAdapter tarifaAdapter;
     DataBaseHelper db;
+    int posicion = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,7 @@ public class TarifaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistroTarifaActivity.class);
         startActivity(intent);
     }
+
 
     @Override
     public boolean onSupportNavigateUp() {
